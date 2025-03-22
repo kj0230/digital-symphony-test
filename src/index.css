@@ -1,5 +1,5 @@
 :root {
-  color: rgba(255, 255, 255, 0.87);
+  color: #1e1e1e;
   background-color: #ffffff;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,71 +12,59 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: none;
-}
-/* a:hover {
-  color: #535bf2;
-} */
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  --primary-color: #639491;
+  --secondary-color: #1e1e1e;
 }
 
 /* Poppins */
-
 @font-face {
   font-family: "PoppinsRegular";
-  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PoppinsMedium";
-  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-  font-weight: normal;
+  src: url("./assets/fonts/Poppins/Poppins-Regular.otf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "PoppinsBold";
-  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: normal;
+  src: url("./assets/fonts/Poppins/Poppins-Bold.otf") format("truetype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PoppinsItalic";
-  src: url("./assets/fonts/Poppins/Poppins-Italic.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "PoppinsExtraBold";
+  src: url("./assets/fonts/Poppins/Poppins-ExtraBold.otf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvertica */
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/Helvetica.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Berlingske */
+@font-face {
+  font-family: "BerlingskeRegular";
+  src: url("./assets/fonts/BerlingskeSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* OpenSans */
+@font-face {
+  font-family: "OpenSans";
+  src: url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -100,9 +88,65 @@ body {
   box-sizing: content-box;
 }
 
-body {
-  margin: 0;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
+/* a:hover {
+  color: #535bf2;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+// Responsive Scaling for Headings
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+} // Large heading
+h2 {
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+h3 {
+  font-family: "BerlingskeRegular";
+  font-size: 64px;
+  color: var(--primary-color);
+}
+h4 {
+  font-size: clamp(1.25rem, 3.5vw, 2rem);
+}
+h5 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+h6 {
+  font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+}
+
+button {
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease-in-out;
+}
+/* button:hover {
+  border: 2px solid rgb(65, 194, 181);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -125,20 +169,4 @@ div {
 img {
   user-select: none;
   pointer-events: none;
-}
-
-video::-webkit-media-controls {
-  display: none !important;
-}
-
-video::-webkit-media-controls-panel {
-  display: none !important;
-}
-
-video::-webkit-media-controls-play-button {
-  display: none !important;
-}
-
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
 }

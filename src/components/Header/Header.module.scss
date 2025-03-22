@@ -1,0 +1,76 @@
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 72px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 100% !important;
+
+  @media screen and (max-width: 768px) {
+    padding: 18px 24px;
+  }
+
+  .imgWrapper {
+    width: 64px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .headerLeft {
+  }
+
+  .headerRight {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 900px) {
+      gap: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 6px;
+    }
+
+    h6 {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: "PoppinsBold";
+      font-size: 16px;
+      color: #1e1e1e;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    button {
+      margin: 0px 64px;
+      color: #ffffff;
+      background-color: var(--primary-color);
+
+      @media screen and (max-width: 900px) {
+        margin: 0px 24px;
+      }
+
+      &:hover {
+        border: 2px solid var(--secondary-color);
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .mobileBtn {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        border-radius: 4px;
+        padding: 10px 36px;
+      }
+    }
+  }
+}

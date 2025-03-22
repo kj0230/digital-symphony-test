@@ -1,0 +1,114 @@
+.newlyLaunchedCard {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+  .imgWrapper {
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px 0px;
+    align-items: flex-start;
+
+    h4 {
+      color: #113558;
+      padding: 0px 24px;
+    }
+
+    .houseType {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 16px 24px;
+      border-bottom: 1px solid #efe7e7;
+
+      img {
+        width: 18px;
+        height: 16px;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: "PoppinsRegular";
+      }
+    }
+
+    .description {
+      font-family: "PoppinsRegular";
+      font-size: 14px;
+
+      text-align: left;
+      word-break: break-word;
+      padding: 16px 24px 28px 24px;
+      border-bottom: 1px solid #efe7e7;
+    }
+
+    .detailsWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+      width: 100%;
+
+      .details {
+        padding: 16px 24px;
+
+        p {
+          font-family: "PoppinsRegular";
+          font-size: 12px;
+          letter-spacing: 0.8px;
+        }
+
+        h6 {
+          font-family: "PoppinsBold";
+          font-size: 20px;
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .btnWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 12px 24px 0px 24px;
+      gap: 6px;
+
+      button {
+        width: 100%;
+        border-radius: 4px;
+        font-family: "PoppinsBold";
+        letter-spacing: 0.8px;
+        padding: 6px 0px !important;
+      }
+
+      .feature {
+        img {
+          width: 16px;
+          height: 14px;
+          margin-right: 4px;
+          margin-top: 2px;
+          transform: translateY(1px);
+        }
+
+        border: 1px solid var(--primary-color);
+        background-color: #ffffff;
+        color: var(--primary-color);
+      }
+
+      .register {
+        color: #ffffff;
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}
