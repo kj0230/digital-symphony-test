@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import desktopBanner from "./assets/img/desktopBanner.png";
 // import mobileMapBg from "./assets/logo/mobileMapBg.png";
 import mobileBanner from "./assets/img/mobileBanner.png";
-import ElementArt from "./assets/img/ElementArt.png";
+import ElementArt from "./assets/img/elementArt.png";
 import Maps from "./assets/img/Map.png";
 import Car from "./assets/img/Car.png";
 import Highway from "./assets/logo/Highway.png";
