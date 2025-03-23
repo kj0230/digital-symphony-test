@@ -1,8 +1,9 @@
 import styles from "./NewlyLaunchedCard.module.scss";
-import NewlyLaunchedHome1 from "../../assets/img/NewlyLaunchedHome1.png";
 import Home from "../../assets/logo/Home.png";
+import { maskNumberWithX } from "../../utilities/Utilities";
 
 type Props = {
+  coverImg: string;
   homeName: string;
   homeType: string;
   description: string;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 export default function NewlyLaunchedCard({
+  coverImg,
   homeName,
   homeType,
   description,
@@ -18,9 +20,9 @@ export default function NewlyLaunchedCard({
   monthlyRepayment,
 }: Props) {
   return (
-    <div className={styles.newlyLaunchedCard}>
+    <div className={styles.newlyLaunchedCard} data-aos="fade-up">
       <div className={styles.imgWrapper}>
-        <img src={NewlyLaunchedHome1} alt="house1" />
+        <img src={coverImg} alt="home-img" />
       </div>
       <div className={styles.content}>
         <h4>{homeName}</h4>
@@ -59,7 +61,7 @@ export default function NewlyLaunchedCard({
               RM
               {isNaN(parseFloat(monthlyRepayment))
                 ? "0"
-                : parseFloat(monthlyRepayment).toLocaleString()}
+                : maskNumberWithX(monthlyRepayment)}
               *
             </h6>
           </div>

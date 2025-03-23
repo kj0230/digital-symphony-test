@@ -1,6 +1,6 @@
 .newlyLaunchedCard {
   background-color: #ffffff;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
 
   .imgWrapper {
     img {
@@ -19,7 +19,7 @@
 
     h4 {
       color: #113558;
-      padding: 0px 24px;
+      padding: 0px 20px;
     }
 
     .houseType {
@@ -27,7 +27,7 @@
       align-items: center;
       gap: 8px;
       width: 100%;
-      padding: 16px 24px;
+      padding: 16px 20px;
       border-bottom: 1px solid #efe7e7;
 
       img {
@@ -47,7 +47,7 @@
 
       text-align: left;
       word-break: break-word;
-      padding: 16px 24px 28px 24px;
+      padding: 16px 20px 28px 20px;
       border-bottom: 1px solid #efe7e7;
     }
 
@@ -58,17 +58,17 @@
       width: 100%;
 
       .details {
-        padding: 16px 24px;
+        padding: 16px 20px;
 
         p {
           font-family: "PoppinsRegular";
-          font-size: 12px;
+          font-size: 10px;
           letter-spacing: 0.8px;
         }
 
         h6 {
           font-family: "PoppinsBold";
-          font-size: 20px;
+          font-size: 18px;
           color: var(--primary-color);
         }
       }
@@ -79,7 +79,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 12px 24px 0px 24px;
+      padding: 12px 20px 0px 20px;
       gap: 6px;
 
       button {
