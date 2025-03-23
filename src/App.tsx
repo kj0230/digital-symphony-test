@@ -17,9 +17,9 @@ import NewlyLaunchedCard from "./components/NewlyLaunchedCard/NewlyLaunchedCard"
 import { useState } from "react";
 import { Input } from "antd";
 import { useGeneralContext } from "./context/GeneralContext";
-import NewlyLaunchedHome1 from "./assets/img/NewlyLaunchedHome1.png";
-import NewlyLaunchedHome2 from "./assets/img/NewlyLaunchedHome2.png";
-import NewlyLaunchedHome3 from "./assets/img/NewlyLaunchedHome3.png";
+import NewlyLaunchedHome1 from "./assets/img/newlyLaunchedHome1.png";
+import NewlyLaunchedHome2 from "./assets/img/newlyLaunchedHome2.png";
+import NewlyLaunchedHome3 from "./assets/img/newlyLaunchedHome3.png";
 
 type RegisterData = {
   name: string;
