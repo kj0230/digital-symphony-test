@@ -1,5 +1,5 @@
 import styles from "./NewlyLaunchedCard.module.scss";
-import Home from "../../assets/logo/Home.png";
+import Home from "../../assets/logo/home.png";
 import { maskNumberWithX } from "../../utilities/Utilities";
 
 type Props = {

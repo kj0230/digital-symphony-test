@@ -1,8 +1,8 @@
 import styles from "./Footer.module.scss";
-import FooterLocation from "../../assets/logo/FooterLocation.png";
-import FooterTime from "../../assets/logo/FooterTime.png";
-import FooterPhone from "../../assets/logo/FooterPhone.png";
-import FooterLogo from "../../assets/logo/FooterLogo.png";
+import FooterLocation from "../../assets/logo/footerLocation.png";
+import FooterTime from "../../assets/logo/footerTime.png";
+import FooterPhone from "../../assets/logo/footerPhone.png";
+import FooterLogo from "../../assets/logo/footerLogo.png";
 import { useGeneralContext } from "../../context/GeneralContext";
 
 export default function Footer() {
