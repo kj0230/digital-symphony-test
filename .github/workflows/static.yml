@@ -16,27 +16,25 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm install  # or `yarn install` / `pnpm install`
+        run: npm install # or yarn install
 
       - name: Build project
-        run: npm run build  # or `yarn build` / `pnpm build`
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+        run: npm run build # or yarn build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"  # Deploy the full build folder
+          path: "dist" # Use dist/ directly
 
       - name: Deploy to GitHub Pages
         id: deployment
